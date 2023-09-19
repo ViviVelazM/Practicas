@@ -22,7 +22,7 @@
   $fechaNac = $_POST['FechaNac'];
   $domicilio = $_POST['Domicilio'];
 
-  $sql = "INSERT INTO MiTabla (saludo, apellidoPaterno, apellidoMaterno, nombres, sexo, email, fechaNac, domicilio)
+  $sql = "INSERT INTO DatosPersonales (saludo, apellidoPaterno, apellidoMaterno, nombres, sexo, email, fechaNac, domicilio)
   VALUES ('$saludo', '$apellidoPaterno', '$apellidoMaterno', '$nombres', '$sexo', '$email', '$fechaNac', '$domicilio')";
 
   if ($conn->query($sql) === TRUE) {
