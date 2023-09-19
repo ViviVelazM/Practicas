@@ -6,7 +6,6 @@ USE `formularioDB`;
 
 CREATE TABLE IF NOT EXISTS `DatosPersonales` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `saludo` VARCHAR(5),
     `apellidoPaterno` VARCHAR(50),
     `apellidoMaterno` VARCHAR(50),
     `nombres` VARCHAR(100),
