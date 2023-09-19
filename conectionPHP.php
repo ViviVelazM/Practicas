@@ -14,13 +14,13 @@
 
   // Recoger los datos del formulario
   $saludo = $_POST['Saludo'];
-  $apellidoPaterno = $_POST['ApellidoP'];
-  $apellidoMaterno = $_POST['ApellidoM'];
-  $nombres = $_POST['Nombres'];
-  $sexo = $_POST['Sexo'];
-  $email = $_POST['Correo'];
-  $fechaNac = $_POST['FechaNac'];
-  $domicilio = $_POST['Domicilio'];
+  $apellidoPaterno = $_POST['apellidoP'];
+  $apellidoMaterno = $_POST['apellidoM'];
+  $nombres = $_POST['nombres'];
+  $sexo = $_POST['sexo'];
+  $email = $_POST['correo'];
+  $fechaNac = $_POST['fechaNac'];
+  $domicilio = $_POST['domi'];
 
   $sql = "INSERT INTO DatosPersonales (saludo, apellidoPaterno, apellidoMaterno, nombres, sexo, email, fechaNac, domicilio)
   VALUES ('$saludo', '$apellidoPaterno', '$apellidoMaterno', '$nombres', '$sexo', '$email', '$fechaNac', '$domicilio')";
