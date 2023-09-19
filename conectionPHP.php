@@ -13,7 +13,6 @@
   }
 
   // Recoger los datos del formulario
-  $saludo = $_POST['Saludo'];
   $apellidoPaterno = $_POST['apellidoP'];
   $apellidoMaterno = $_POST['apellidoM'];
   $nombres = $_POST['nombres'];
@@ -22,8 +21,8 @@
   $fechaNac = $_POST['fechaNac'];
   $domicilio = $_POST['domi'];
 
-  $sql = "INSERT INTO DatosPersonales (saludo, apellidoPaterno, apellidoMaterno, nombres, sexo, email, fechaNac, domicilio)
-  VALUES ('$saludo', '$apellidoPaterno', '$apellidoMaterno', '$nombres', '$sexo', '$email', '$fechaNac', '$domicilio')";
+  $sql = "INSERT INTO DatosPersonales (apellidoPaterno, apellidoMaterno, nombres, sexo, email, fechaNac, domicilio)
+  VALUES ('$apellidoPaterno', '$apellidoMaterno', '$nombres', '$sexo', '$email', '$fechaNac', '$domicilio')";
 
   if ($conn->query($sql) === TRUE) {
     echo "Nuevo registro creado exitosamente";
